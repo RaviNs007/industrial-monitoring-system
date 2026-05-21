@@ -40,6 +40,7 @@ This project helped me practice:
 - Python functions
 - Loops
 - Lists
+- Dictionaries
 - Conditional logic
 - Input validation
 - Exception handling (`try/except`)
