@@ -24,15 +24,12 @@ def main_menu():
     
         if choice == "1" or choice == 't':
             return "Temperature"
-            break
         
         elif choice == '2' or choice == 'p':
             return "Pressure"
-            break
             
         elif choice == '3' or choice == 'v':
             return "Voltage"
-            break
         print('Invalid choice')
         continue
 
@@ -91,21 +88,15 @@ def print_report(high_alerts, low_alerts, data_list, choice):
     if not data_list:
         print('No data received')
         
-    return
+        return
 #calculating average and printing REPORT
     
     avg = round(sum(data_list)/len(data_list),2)
     highest_value = max(data_list)
     lowest_value = min(data_list)
 
-    if choice  == "Temperature":
-        unit = '°C'
-
-    elif choice == "Pressure":
-        unit = 'PSI'
-
-    elif choice == "Voltage":
-        unit = 'VOLTS'
+    units = {"Temperature": '°C', "Pressure": 'PSI', "Voltage": 'VOLTS'}
+    unit = units[choice]
     
     print(f"""
 ########################################################
