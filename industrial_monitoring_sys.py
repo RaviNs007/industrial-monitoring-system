@@ -20,7 +20,7 @@ def main_menu():
     """)
     
     while True:
-        choice = input("Choose senser from menu (1-3): ").strip().lower()
+        choice = input("Choose sensor from menu (1-3): ").strip().lower()
     
         if choice == "1" or choice == 't':
             return "Temperature"
